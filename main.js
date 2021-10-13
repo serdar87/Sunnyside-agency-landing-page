@@ -9,7 +9,6 @@ document.querySelector(".fas").addEventListener("click", function () {
 });
 
 document.body.addEventListener("click", function (e) {
-  console.log(e.target);
   if (!e.target.matches("ul") && !e.target.matches(".fas")) {
     document.querySelector(".arrowimage").classList.remove("hidden");
     mobileNav.style.display = "none";
