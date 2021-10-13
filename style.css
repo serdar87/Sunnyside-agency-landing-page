@@ -264,12 +264,9 @@ h1 {
     height: 5%;
     width: 5%;
   }
+
   .nav {
     display: none;
-  }
-
-  .navmobile {
-    display: block;
     position: absolute;
     z-index: 2;
     padding: 2%;
@@ -277,7 +274,7 @@ h1 {
     background-color: var(--White);
     color: black;
     width: 85%;
-    height: 20%;
+    height: 22%;
     left: 7.5%;
     top: 4%;
   }
