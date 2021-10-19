@@ -9,8 +9,13 @@ document.querySelector(".fas").addEventListener("click", function () {
 });
 
 document.body.addEventListener("click", function (e) {
-  if (!e.target.matches("ul") && !e.target.matches(".fas")) {
+  if (
+    window.innerWidth <= 600 &&
+    !e.target.matches("ul") &&
+    !e.target.matches(".fas")
+  ) {
     document.querySelector(".arrowimage").classList.remove("hidden");
     mobileNav.style.display = "none";
   }
 });
+
