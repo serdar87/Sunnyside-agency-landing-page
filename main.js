@@ -1,4 +1,5 @@
-let mobileNav = document.querySelector(".nav");
+const mobileNav = document.querySelector(".nav");
+const container = document.querySelector(".container");
 document.querySelector(".fas").addEventListener("click", function () {
   if (mobileNav.style.display === "block") {
     mobileNav.style.display = "none";
@@ -19,3 +20,19 @@ document.body.addEventListener("click", function (e) {
   }
 });
 
+const handleOver = function (e) {
+  if (e.target.classList.contains("link")) {
+    const link = e.target;
+    const siblings = e.target.closest(".container").querySelectorAll(".link");
+    const logo = document.querySelector(".logo");
+    siblings.forEach((el) => {
+      if (el !== link) {
+        el.style.opacity = this;
+      }
+    });
+    logo.style.opacity = this;
+  }
+};
+container.addEventListener("mouseover", handleOver.bind(0.5));
+
+container.addEventListener("mouseout", handleOver.bind(1));
