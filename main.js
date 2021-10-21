@@ -21,7 +21,7 @@ document.body.addEventListener("click", function (e) {
 });
 
 const handleOver = function (e) {
-  if (e.target.classList.contains("link")&&  window.innerWidth >= 600) {
+  if (e.target.classList.contains("link") && window.innerWidth >= 600) {
     const link = e.target;
     const siblings = e.target.closest(".container").querySelectorAll(".link");
     const logo = document.querySelector(".logo");
