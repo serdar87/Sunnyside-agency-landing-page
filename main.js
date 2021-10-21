@@ -11,7 +11,7 @@ document.querySelector(".fas").addEventListener("click", function () {
 
 document.body.addEventListener("click", function (e) {
   if (
-    window.innerWidth <= 600 &&
+    window.innerWidth <= 700 &&
     !e.target.matches("ul") &&
     !e.target.matches(".fas")
   ) {
